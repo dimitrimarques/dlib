@@ -137,6 +137,7 @@ namespace dlib
     struct is_color_space_cartesian_image { const static bool value = 
         pixel_traits<typename image_traits<image_type>::pixel_type>::rgb || 
         pixel_traits<typename image_traits<image_type>::pixel_type>::lab || 
+        pixel_traits<typename image_traits<image_type>::pixel_type>::hsi || 
         pixel_traits<typename image_traits<image_type>::pixel_type>::grayscale; };
     /*
         Tells if all color components of image pixels are in cartesian coordinates, compared to e.g. polar coordinates.
